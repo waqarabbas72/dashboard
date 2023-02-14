@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="row container-fluid m-0 p-0 align-items-center">
+        <!-- Brand Logo -->
+        <div class="brand col-2 p-3">
+          <div class="d-flex align-items-center">
+            <i
+              class="bx bxl-venmo text-white bg-primary fs-2 p-2 rounded-4 mx-2"
+            ></i>
+            <img
+              src="	https://vora.makaanlelo.com/static/vora/images/logo-text.png"
+              alt=""
+              class="img-logo"
+            />
+          </div>
+        </div>
+
+        <div
+          class="col-10 d-flex justify-content-between align-items-center py-2"
+        >
+          <!-- dashboard and Menu Btn -->
+          <div class="d-flex">
+            <i class="bx bx-menu mx-3"></i>
+            <h3 class="text-black fw-bold">Dashboard</h3>
+          </div>
+
+          <!-- header UL -->
+          <div>
+            <ul class="d-flex align-items-center m-0">
+              <!-- List Items -->
+              <li>
+                <input
+                  type="text"
+                  class="searchBar mx-2 py-3 px-2"
+                  placeholder="Search Here..."
+                />
+              </li>
+              <!-- List Items -->
+              <li>
+                <i class="bx bx-envelope mx-3"></i>
+              </li>
+              <!-- List Items -->
+              <li>
+                <i class="bx bxs-bell mx-3"></i>
+              </li>
+              <!-- List Items -->
+              <li>
+                <!-- Profile -->
+                <div class="profile d-flex">
+                  <img
+                    src="https://vora.makaanlelo.com/media/admin@example.com/profile.png"
+                    alt=""
+                    width="50"
+                    height="50"
+                    class="mx-3"
+                  />
+                  <div>
+                    <span class="fw-bold text-black">Gaurav Nagar</span>
+                    <p class="text-muted">Admin</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Ends Here -->
+
+    <!--=========================================== MAIN-BOX ==================================================-->
+    <div class="main-box container-fluid mx-0 px-0">
+      <div class="row mx-0">
+        <!-- sidebar -->
+        <div class="side-bar col-xl-2 me-0 pe-0">
+          <!-- Accordian -->
+          <ul class="list-unstyled ps-2">
+            <!--Module  -->
+            <li class="mb-1">
+              <div
+                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 d-flex justify-content-between"
+                data-bs-toggle="collapse"
+                data-bs-target="#home-collapse"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="bx bxs-dashboard fs-4"></i>
+                  <h4 class="mx-2 my-0">Module</h4>
+                </div>
+                <i class="bx bx-chevron-right fs-4"></i>
+              </div>
+              <!-- collapse -->
+              <div class="collapse" id="home-collapse">
+                <ul
+                  class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-5"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Users</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Groups</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Permissions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- collapse -->
+            </li>
+
+            <!--Dashboard  -->
+            <li class="mb-1">
+              <div
+                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 d-flex justify-content-between"
+                data-bs-toggle="collapse"
+                data-bs-target="#dashboard-collapse"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="bx bxs-dashboard fs-4"></i>
+                  <h4 class="mx-2 my-0">Dashboard</h4>
+                </div>
+                <i class="bx bx-chevron-right fs-4"></i>
+              </div>
+              <!-- collapse -->
+              <div class="collapse" id="dashboard-collapse">
+                <ul
+                  class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-5"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Dashboard Dark</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Contacts</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Kanban</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Calendar</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Messages</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- collapse -->
+            </li>
+
+            <!--Apps  -->
+            <li class="mb-1">
+              <div
+                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 d-flex justify-content-between"
+                data-bs-toggle="collapse"
+                data-bs-target="#apps-collapse"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="bx bx-desktop fs-4"></i>
+                  <h4 class="mx-2 my-0">Apps</h4>
+                </div>
+                <i class="bx bx-chevron-right fs-4"></i>
+              </div>
+              <!-- collapse -->
+              <div class="collapse" id="apps-collapse">
+                <ul
+                  class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-5"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Email</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Calendar</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Shop</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- collapse -->
+            </li>
+
+            <!--Charts  -->
+            <li class="mb-1">
+              <div
+                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 d-flex justify-content-between"
+                data-bs-toggle="collapse"
+                data-bs-target="#charts-collapse"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="bx bx-equalizer fs-4"></i>
+                  <h4 class="mx-2 my-0">Charts</h4>
+                </div>
+                <i class="bx bx-chevron-right fs-4"></i>
+              </div>
+              <!-- collapse -->
+              <div class="collapse" id="charts-collapse">
+                <ul
+                  class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-5"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Flot</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Morris</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Chartjs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Chartist</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- collapse -->
+            </li>
+
+            <!--Bootstrap  -->
+            <li class="mb-1">
+              <div
+                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 d-flex justify-content-between"
+                data-bs-toggle="collapse"
+                data-bs-target="#bootstrap-collapse"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="bx bx-globe fs-4"></i>
+                  <h4 class="mx-2 my-0">Bootstrap</h4>
+                </div>
+                <i class="bx bx-chevron-right fs-4"></i>
+              </div>
+              <!-- collapse -->
+              <div class="collapse" id="bootstrap-collapse">
+                <ul
+                  class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-5"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Accordian</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Alert</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Badge</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- collapse -->
+            </li>
+
+            <!--Plugins  -->
+            <li class="mb-1">
+              <div
+                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 d-flex justify-content-between"
+                data-bs-toggle="collapse"
+                data-bs-target="#plugins-collapse"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="bx bx-heart fs-4"></i>
+                  <h4 class="mx-2 my-0">Plugins</h4>
+                </div>
+                <i class="bx bx-chevron-right fs-4"></i>
+              </div>
+              <!-- collapse -->
+              <div class="collapse" id="plugins-collapse">
+                <ul
+                  class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-5"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Select 2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Nestedable</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Noui Slider</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- collapse -->
+            </li>
+
+            <!-- Widget -->
+            <li class="ps-2">
+              <div class="d-flex align-items-center ps-1">
+                <i class="bx bxs-cog fs-4"></i>
+                <h4 class="mx-2 my-0">Widget</h4>
+              </div>
+            </li>
+
+            <!--Forms  -->
+            <li class="mb-1">
+              <div
+                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 d-flex justify-content-between"
+                data-bs-toggle="collapse"
+                data-bs-target="#forms-collapse"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="bx bx-clipboard fs-4"></i>
+                  <h4 class="mx-2 my-0">Forms</h4>
+                </div>
+                <i class="bx bx-chevron-right fs-4"></i>
+              </div>
+              <!-- collapse -->
+              <div class="collapse" id="forms-collapse">
+                <ul
+                  class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-5"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Form Elements</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Wizard</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Form CKEditor</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- collapse -->
+            </li>
+
+            <!--table  -->
+            <li class="mb-1">
+              <div
+                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 d-flex justify-content-between"
+                data-bs-toggle="collapse"
+                data-bs-target="#table-collapse"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="bx bx-table fs-4"></i>
+                  <h4 class="mx-2 my-0">Table</h4>
+                </div>
+                <i class="bx bx-chevron-right fs-4"></i>
+              </div>
+              <!-- collapse -->
+              <div class="collapse" id="table-collapse">
+                <ul
+                  class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-5"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Bootstrap</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Datatable</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- collapse -->
+            </li>
+
+            <!--Pages  -->
+            <li class="mb-1">
+              <div
+                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed w-100 d-flex justify-content-between"
+                data-bs-toggle="collapse"
+                data-bs-target="#pages-collapse"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center">
+                  <i class="bx bxs-bookmarks fs-4"></i>
+                  <h4 class="mx-2 my-0">Pages</h4>
+                </div>
+                <i class="bx bx-chevron-right fs-4"></i>
+              </div>
+              <!-- collapse -->
+              <div class="collapse" id="pages-collapse">
+                <ul
+                  class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-5"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Error</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-dark d-inline-flex text-decoration-none rounded"
+                      >Lock Screen</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- collapse -->
+            </li>
+
+            <!-- New Project -->
+            <li class="w-100">
+              <button class="btn btn-lg bg-dark text-white px-5">
+                + New Project
+              </button>
+            </li>
+
+            <!-- footer -->
+            <li>
+              <p class="fs-6 m-0 fw-bold">Vora Saas Admin Dashboard</p>
+              <p class="fs-6 m-1">© 2022 All Rights Reserved</p>
+              <p class="fs-6 m-0">Made with by DexignLab</p>
+            </li>
+          </ul>
+          <!-- Accordian -->
+          <!-- side-bar Ends Here -->
+        </div>
+        <!-- sidebar Ends Here-->
+
+        <!-- ==================== Content Box ========================= -->
+        <div class="content-box p-5 container-fluid col">
+          <div class="row">
+            <!-- First Column -->
+            <div class="col-xl-6">
+              <div class="row g-3">
+                <!-- col-1st -->
+                <div class="col-sm-6">
+                  <div
+                    class="card py-md-4 p-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <div class="top-cards">
+                      <h1 class="fw-bold">78</h1>
+                      <h6>Total Projects Handeled</h6>
+                    </div>
+                    <i class="bx bxs-star fs-1 text-primary"></i>
+                  </div>
+                </div>
+                <!-- col-2nd -->
+                <div class="col-sm-6">
+                  <div
+                    class="card py-md-4 p-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <div class="top-cards">
+                      <h1 class="fw-bold">214</h1>
+                      <h6>Contacts You have</h6>
+                    </div>
+                    <i class="bx bxs-user fs-1 text-primary"></i>
+                  </div>
+                </div>
+                <!-- col-3rd -->
+                <div class="col-sm-6">
+                  <div
+                    class="card py-md-4 p-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <div class="top-cards">
+                      <h1 class="fw-bold">93</h1>
+                      <h6>Total Unfinished tasks</h6>
+                    </div>
+                    <i class="bx bxs-dashboard fs-1 text-primary"></i>
+                  </div>
+                </div>
+                <!-- col-4th -->
+                <div class="col-sm-6">
+                  <div
+                    class="card py-md-4 p-3 d-flex flex-row align-items-center justify-content-between"
+                  >
+                    <div class="top-cards">
+                      <h1 class="fw-bold">12</h1>
+                      <h6>Unread Messages</h6>
+                    </div>
+                    <i class="bx bxs-message fs-1 text-primary"></i>
+                  </div>
+                </div>
+
+                <!-- column-5Th -->
+                <div class="col-xl-12">
+                  <div class="card">
+                    <!-- card-header -->
+                    <div
+                      class="card-header bg-white p-4 mb-0 d-sm-flex flex-wrap d-block border-0 align-items-center"
+                    >
+                      <div class="me-auto pe-3">
+                        <h4 class="text-black fs-20 mb-sm-0 mb-2">
+                          Project Created
+                        </h4>
+                      </div>
+                      <div class="card-action card-tabs">
+                        <ul
+                          class="nav nav-tabs p-2 rounded-3"
+                          id="project"
+                          role="tablist"
+                        >
+                          <li class="nav-item" role="presentation">
+                            <a
+                              class="nav-link active"
+                              data-bs-toggle="tab"
+                              href="#Daily"
+                              role="tab"
+                              aria-selected="true"
+                            >
+                              Daily
+                            </a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a
+                              class="nav-link"
+                              data-bs-toggle="tab"
+                              href="#Weekly"
+                              role="tab"
+                              aria-selected="false"
+                              tabindex="-1"
+                            >
+                              Weekly
+                            </a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a
+                              class="nav-link"
+                              data-bs-toggle="tab"
+                              href="#Monthly"
+                              role="tab"
+                              aria-selected="false"
+                              tabindex="-1"
+                            >
+                              Monthly
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Col-6th -->
+                <div class="col-xl-12 col-xxl-6 col-md-6">
+                  <!-- card -->
+                  <div class="card">
+                    <div
+                      class="card-header bg-white shadow-sm py-4 border-bottom d-flex justify-content-between"
+                    >
+                      <h4 class="text-black fs-20">Monthly Target</h4>
+                      <i class="bx bx-dots-vertical-rounded fs-2"></i>
+                    </div>
+                    <div class="card-body box">
+                      <div class="percent">
+                        <svg>
+                          <circle cx="75" cy="75" r="75"></circle>
+                          <circle cx="75" cy="75" r="75"></circle>
+                        </svg>
+                        <div class="number">
+                          <h2>75<span>%</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Col-7th -->
+                <div class="col-xl-12 col-xxl-6 col-md-6">
+                  <!-- card -->
+                  <div class="card">
+                    <div
+                      class="card-header bg-white shadow-sm py-4 border-bottom d-flex justify-content-between"
+                    >
+                      <h4 class="text-black fs-20">New Clients</h4>
+                      <i class="bx bx-dots-vertical-rounded fs-2"></i>
+                    </div>
+                    <div class="card-body"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- First Column Ends here -->
+
+            <!-- Second Column -->
+            <div class="col-xl-6 mt-md-4 mt-xl-0">
+              <div class="row">
+                <!-- 1st-col -->
+                <div class="col-xl-12 col-xxl-6 col-md-6">
+                  <div class="card rounded-sm">
+                    <!-- card-header -->
+                    <div
+                      class="card-header shadow-sm pt-4 bg-white border-bottom-5 d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <h5 class="text-black fw-bold">Quick To-Do List</h5>
+                        <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+                      </div>
+                      <!-- icon -->
+                      <div>
+                        <i
+                          class="bx bx-plus-medical fs-5 p-2 text-white bg-secondary fw-lighter rounded-5"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- card-body -->
+                    <div class="card-body todo-list-cardBody">
+                      <!-- graphic designing -->
+                      <div class="border-bottom mb-4">
+                        <a href="#" class="btn btn-sm btn-success p-2 mb-3"
+                          >Graphic Designer</a
+                        >
+                        <p class="text-black fw-bold fs-6">
+                          Visual Graphic for Presentation to Client
+                        </p>
+                        <div class="d-flex justify-content-between py-3">
+                          <!-- users -->
+                          <ul class="users col-6">
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/1.jpg"
+                                alt=""
+                                class="rounded-5 user-1"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/2.jpg"
+                                alt=""
+                                class="rounded-5 user-2"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/3.jpg"
+                                alt=""
+                                class="rounded-5 user-3"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/4.jpg"
+                                alt=""
+                                class="rounded-5 user-4"
+                              />
+                            </li>
+                          </ul>
+                          <!-- progress-bar -->
+                          <div class="col-6">
+                            <div class="d-flex justify-content-between">
+                              <p class="m-0">Progress</p>
+                              <p class="m-0">24%</p>
+                            </div>
+                            <div
+                              class="progress p-0 m-0"
+                              role="progressbar"
+                              aria-label="Basic example"
+                              aria-valuenow="24"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 5px"
+                            >
+                              <div
+                                class="progress-bar"
+                                style="width: 24%; height: 5px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Digital marketing  -->
+                      <div class="border-bottom mb-4">
+                        <a
+                          href="#"
+                          class="btn btn-sm p-2 text-white mb-3"
+                          style="background-color: blueviolet"
+                          >Digital Marketing</a
+                        >
+                        <p class="text-black fw-bold fs-6">
+                          Build Database Design for Fasto Admin v2
+                        </p>
+                        <div class="d-flex justify-content-between py-3">
+                          <!-- users -->
+                          <ul class="users col-6">
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/5.jpg"
+                                alt=""
+                                class="rounded-5 user-1"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/6.jpg"
+                                alt=""
+                                class="rounded-5 user-2"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/7.jpg"
+                                alt=""
+                                class="rounded-5 user-3"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/8.jpg"
+                                alt=""
+                                class="rounded-5 user-4"
+                              />
+                            </li>
+                          </ul>
+                          <!-- progress-bar -->
+                          <div class="col-6">
+                            <div class="d-flex justify-content-between">
+                              <p class="m-0">Progress</p>
+                              <p class="m-0">79%</p>
+                            </div>
+                            <div
+                              class="progress p-0 m-0"
+                              role="progressbar"
+                              aria-label="Basic example"
+                              aria-valuenow="79"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 5px"
+                            >
+                              <div
+                                class="progress-bar"
+                                style="width: 79%; height: 5px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Programmer -->
+                      <div class="border-bottom mb-4">
+                        <a
+                          href="#"
+                          class="btn btn-sm text-black btn-warning p-2 mb-3"
+                          >Programmer</a
+                        >
+                        <p class="text-black fw-bold fs-6">
+                          Make Promotional Ads for Instagram Fasto’s
+                        </p>
+                        <div class="d-flex justify-content-between py-3">
+                          <!-- users -->
+                          <ul class="users col-6">
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/9.jpg"
+                                alt=""
+                                class="rounded-5 user-1"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/10.jpg"
+                                alt=""
+                                class="rounded-5 user-2"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/11.jpg"
+                                alt=""
+                                class="rounded-5 user-3"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/12.jpg"
+                                alt=""
+                                class="rounded-5 user-4"
+                              />
+                            </li>
+                          </ul>
+                          <!-- progress-bar -->
+                          <div class="col-6">
+                            <div class="d-flex justify-content-between">
+                              <p class="m-0">Progress</p>
+                              <p class="m-0">36%</p>
+                            </div>
+                            <div
+                              class="progress p-0 m-0"
+                              role="progressbar"
+                              aria-label="Basic example"
+                              aria-valuenow="36"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 5px"
+                            >
+                              <div
+                                class="progress-bar"
+                                style="width: 36%; height: 5px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Digital Marketing -->
+                      <div class="border-bottom mb-4">
+                        <a
+                          href="#"
+                          class="btn btn-sm text-white p-2 mb-3"
+                          style="background-color: blueviolet"
+                          >Digital Marketing</a
+                        >
+                        <p class="text-black fw-bold fs-6">
+                          Build Database Design for Fasto Admin v2
+                        </p>
+                        <div class="d-flex justify-content-between py-3">
+                          <!-- users -->
+                          <ul class="users col-6">
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/1.jpg"
+                                alt=""
+                                class="rounded-5 user-1"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/2.jpg"
+                                alt=""
+                                class="rounded-5 user-2"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/3.jpg"
+                                alt=""
+                                class="rounded-5 user-3"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="https://vora.makaanlelo.com/static/vora/images/users/4.jpg"
+                                alt=""
+                                class="rounded-5 user-4"
+                              />
+                            </li>
+                          </ul>
+                          <!-- progress-bar -->
+                          <div class="col-6">
+                            <div class="d-flex justify-content-between">
+                              <p class="m-0">Progress</p>
+                              <p class="m-0">24%</p>
+                            </div>
+                            <div
+                              class="progress p-0 m-0"
+                              role="progressbar"
+                              aria-label="Basic example"
+                              aria-valuenow="24"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 5px"
+                            >
+                              <div
+                                class="progress-bar"
+                                style="width: 24%; height: 5px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col border-top p-2">
+                      <input
+                        type="button"
+                        id="tasksBtn"
+                        value="26 Tasks More"
+                        class="w-100"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ----------------------2nd-col -------------------------->
+                <div class="col-xl-12 col-xxl-6 col-md-6 mt-4 mt-md-0 mt-xl-4 mt-xxl-0">
+                  <div class="card rounded-sm">
+                    <!-- card-header -->
+                    <div
+                      class="card-header shadow-sm py-4 bg-white border-bottom-5 d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <h5 class="text-black fw-bold my-3">
+                          UpComming Projects
+                        </h5>
+                      </div>
+                      <!-- icon -->
+                      <div>
+                        <i
+                          class="bx bx-plus-medical fs-5 p-2 text-white bg-secondary fw-lighter rounded-5"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- card-body -->
+                    <div class="card-body upcomming-projects-cardBody">
+                      <!-- 1st -->
+                      <div class="border-bottom mb-4">
+                        <a href="#" class="text-decoration-none mb-3 fw-bold"
+                          >Yoast Esac</a
+                        >
+                        <div class="d-flex justify-content-between my-2">
+                          <p class="text-black fw-bold">
+                            Redesign Kripton Mobile App
+                          </p>
+                          <div>
+                            <i class="bx bx-dots-vertical-rounded fs-3"></i>
+                          </div>
+                        </div>
+                        <div class="d-inline-flex align-items-center">
+                          <i class="bx bx-calendar-alt me-2 fw-bold"></i>
+                          <p class="fw-bold text-muted m-0">
+                            Created on Sep 8th,2020
+                          </p>
+                        </div>
+                        <div>
+                          <h1>hello</h1>
+                        </div>
+                      </div>
+
+                      <!-- 2nd  -->
+                      <div class="border-bottom mb-4">
+                        <a href="#" class="text-decoration-none mb-3 fw-bold"
+                          >Yoast Esac</a
+                        >
+                        <div class="d-flex justify-content-between my-2">
+                          <p class="text-black fw-bold">
+                            Build Branding Persona for Etza.id
+                          </p>
+                          <div>
+                            <i class="bx bx-dots-vertical-rounded fs-3"></i>
+                          </div>
+                        </div>
+                        <div class="d-inline-flex align-items-center">
+                          <i class="bx bx-calendar-alt me-2 fw-bold"></i>
+                          <p class="fw-bold text-muted m-0">
+                            Created on Sep 8th,2020
+                          </p>
+                        </div>
+                        <div>
+                          <h1>hello</h1>
+                        </div>
+                      </div>
+
+                      <!-- 3rd -->
+                      <div class="border-bottom mb-4">
+                        <a href="#" class="text-decoration-none mb-3 fw-bold"
+                          >Yoast Esac</a
+                        >
+                        <div class="d-flex justify-content-between my-2">
+                          <p class="text-black fw-bold">
+                            Manage SEO for Eclan Company Profile
+                          </p>
+                          <div>
+                            <i class="bx bx-dots-vertical-rounded fs-3"></i>
+                          </div>
+                        </div>
+                        <div class="d-inline-flex align-items-center">
+                          <i class="bx bx-calendar-alt me-2 fw-bold"></i>
+                          <p class="fw-bold text-muted m-0">
+                            Created on Sep 8th,2020
+                          </p>
+                        </div>
+                        <div>
+                          <h1>hello</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3rd-col -->
+                <div class="col-xl-12 mt-4">
+                  <div class="card">
+                    <div class="card-header bg-white shadow-sm d-flex justify-content-between p-4 align-items-center">
+                      <h5 class="m-0 text-black fw-bold">Recent Messages</h5>
+                      <a href="#" class="btn btn-primary btn-lg">+ New Message</a>
+                    </div>
+                    <div class="card-body">
+                      <!-- message -->
+                      <div class="message-box d-flex justify-content-between align-items-start">
+                        <div class="image-box me-3">
+                          <img src="https://vora.makaanlelo.com/static/vora/images/users/1.png" alt="">
+                          <span class="active"></span>
+                        </div>
+
+                        <div class="message-content d-flex align-items-center">
+                           <div>
+                            <p class="text-black fw-bold my-1">Chandara Kiev</p>
+                            <p class="my-1 text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit eligendi, praesentium rerum</p>
+                            <p class="text-muted mb-0">5m ago</p>
+                           </div>
+                           <a href="#" class="btn btn-sm reply">Reply</a>
+                        </div>
+                      </div>
+                      <!-- message -->
+                      <div class="message-box d-flex justify-content-between align-items-start my-4">
+                        <div class="image-box me-3">
+                          <img src="https://vora.makaanlelo.com/static/vora/images/users/2.png" alt="">
+                          <span class="active"></span>
+                        </div>
+
+                        <div class="message-content d-flex align-items-center">
+                           <div>
+                            <p class="text-black fw-bold my-1">Samuel Quequeee</p>
+                            <p class="my-1 text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit eligendi, praesentium rerum</p>
+                            <p class="text-muted mb-0">41m ago</p>
+                           </div>
+                           <a href="#" class="btn btn-sm reply">Reply</a>
+                        </div>
+                      </div>
+                      <!-- message -->
+                      <div class="message-box d-flex justify-content-between align-items-start">
+                        <div class="image-box me-3">
+                          <img src="https://vora.makaanlelo.com/static/vora/images/users/3.png" alt="">
+                        </div>
+
+                        <div class="message-content d-flex align-items-center">
+                           <div>
+                            <p class="text-black fw-bold my-1">Laurenz Jumawa</p>
+                            <p class="my-1 text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit eligendi, praesentium rerum</p>
+                            <p class="text-muted mb-0">25m ago</p>
+                           </div>
+                           <a href="#" class="btn btn-sm reply">Reply</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MAIN -->
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

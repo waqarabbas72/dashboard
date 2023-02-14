@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    /* position: fixed; */
+    width: 100%;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+header i{
+    font-size: 40px;
+    color: rgb(199, 198, 198);
+}
+
+
+
+header .searchBar{
+    background: transparent;
+    border: 1px solid rgb(230, 230, 230);
+    width: 20rem;
+    border-radius: 12px;
+    outline: none;
+}
+header .profile{
+  border-left: 1px solid rgb(107, 107, 107);
+}
+
+header .bx-menu{
+    color: rgb(18, 113, 255);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* side-bar */
+.side-bar ul li{
+    margin: 30px 0;
+}
+
+.side-bar ul li h4,i{
+    color: rgb(105, 103, 103);
+}
+.side-bar ul li h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.side-bar ul li h4:hover{
+    color: rgb(62, 62, 246) !important;
+    transition: all .2s ease;
+}
+
+.side-bar ul li ul li a{
+    margin: 0;
+    font-size: 16px !important;
+}
+
+.side-bar ul li a{
+    font-size: 20px;
+    color: gray !important;
+}
+.side-bar{
+    width: 280px !important;
+    overflow-y: hidden;
+    position: inherit;
+    height: 90vh;
+}
+
+.side-bar:hover{
+    overflow-y: scroll;
+}
+
+/* ----------------------------------- COntent-Box ------------------------------------- */
+
+.content-box{
+    background-color: rgb(238, 238, 238);
+}
+
+.content-box .card{
+   border: none;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.top-cards h1{
+    font-size: 50px;
+}    
+.top-cards h6{
+    color: rgb(183, 183, 183);
+} 
+ /* nav-tabs */
+.nav-tabs{
+    background-color: rgb(233, 233, 233);
+    padding: 10px 30px;
+    align-items: center;
+}
+
+.nav-tabs .nav-link{
+    color: rgb(111, 111, 111);
+    font-weight: 900;
+}
+
+
+/* Progress BAr */
+.box{
+    position: relative;
+    width: auto;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 30px 60px rgba(0,0,0,.2);
+    border-radius: 0 0 12px 12px;
+}
+.box .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box .percent svg{
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+.box .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 12;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 480;
+    stroke-dashoffset: 480;
+}
+.box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.box .percent svg circle:nth-child(2){
+    stroke-dashoffset: 120;
+    stroke: #03a9f4;
+}
+.box .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+.box .percent .number h2{
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Todo-List */
+.todo-list-cardBody{
+    height: 63vh;
+    overflow-y: hidden;
+}
+.todo-list-cardBody:hover{
+    overflow-y: scroll;
+}
+.users{
+    position: relative;
+    min-width: 40%;
+}
+.users .user-4{
+    position: absolute;
+    right: 60px;
+}
+
+.users .user-3{
+    position: absolute;
+    right: 80px;
+}
+
+.users .user-2{
+    position: absolute;
+    right: 100px;
+}
+
+.users .user-1{
+    position: absolute;
+    right: 120px;
+}
+
+#tasksBtn{
+    background-color: rgb(220, 220, 220);
+    padding: 10px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+    color:rgb(62, 142, 246) ;
+}
+
+#tasksBtn:hover{
+ background-color:rgb(62, 142, 246);
+ color: white;
+ transition: all .5s ease;
+}
+
+/* upcomming-projects */
+.upcomming-projects-cardBody{
+    height: 72vh;
+    overflow-y: hidden;
+}
+.upcomming-projects-cardBody:hover{
+    overflow-y: scroll;
+}
+
+/* Messages box */
+.image-box {
+    position: relative;
+    display: inline-block;
+}
+.image-box img{
+    border-radius: 50%;
+}
+.image-box span.active {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    height: 24px;
+    width: 24px;
+    background: #1EBA62;
+    border: 4px solid #fff;
+    border-radius: 3rem;
+}
+.message-content .reply{
+    background-color: rgb(221, 236, 239);
+    color: rgb(0, 85, 255);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 13px 25px;
+    border-radius: 12px;
+}
+.message-content .reply:hover{
+    background-color: rgb(0, 85, 255);
+    color: rgb(221, 236, 239);
+}
+
+
+
+/* ===================================== RESPONSIVENESS ========================== */
+@media (max-width : 1200px) {
+    .side-bar h4 , .side-bar .bx-chevron-right{
+        display: none;
+    }
+    
+}
