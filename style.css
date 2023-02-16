@@ -88,6 +88,7 @@ a{
     background-color: rgb(238, 238, 238);
     height: 92vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .content-box .card{
@@ -273,6 +274,18 @@ a{
     color: rgb(221, 236, 239);
 }
 
+.edit-delete{
+    display: none;
+ position: absolute;
+ right: 0;
+ background-color: white;
+ z-index: 9;
+}
+
+.vertical-dots{
+    position: relative;
+}
+
 
 
 /* ===================================== RESPONSIVENESS ========================== */
@@ -292,6 +305,9 @@ a{
     }
 
 }
+
+
+
 /* max width 768px */
 @media (max-width:768px) {
     .side-bar{
