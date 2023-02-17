@@ -18,10 +18,80 @@ let progress = setInterval(() => {
   }
 }, speed);
 
-// Project Chart
-
-// Clients Charts
 window.onload = function () {
+  //  Chart 1 Project Chart
+  var chart1 = new CanvasJS.Chart("projectChart", {
+    animationEnabled: true,
+    exportEnabled: true,
+    theme: "light1", // "light1", "light2", "dark1", "dark2
+
+    toolbar: {
+      enabled : false
+    },
+    axisY: {
+      includeZero: true,
+      interval: 40,
+      lineThickness : 0,
+      tickThickness :0,
+      labelFontSize : 14,
+    },
+    axisX: {
+      includeZero: false,
+      interval: 1,
+      lineThickness : 0,
+      tickThickness :0,
+      labelFontSize : 14,
+      labels : [1,11,22]
+    },
+    dataPointWidth: 10,
+
+    data: [
+      {
+        type: "column", //change type to bar, line, area, pie, etc
+        //indexLabel: "{y}", //Shows y value on all Data Points
+        indexLabelFontColor: "#5A5757",
+        toolTipContent: "{x}<br/>{name} <strong>{y}</strong>",
+        color: "#1474CA",
+        name: "New Clients :",
+        indexLabelFontSize: 16,
+        indexLabelPlacement: "outside",
+
+        dataPoints: [
+          { x: 01, y: 70 },
+          { x: 01, y: -60 },
+          { x: 02, y: 20 },
+          { x: 02, y: -10 },
+          { x: 03, y: 75 },
+          { x: 03, y: -50 },
+          { x: 04, y: 20 },
+          { x: 04, y: -25 },
+          { x: 05, y: 50 },
+          { x: 05, y: -30 },
+          { x: 06, y: 40 },
+          { x: 06, y: -65 },
+          { x: 07, y: 65 },
+          { x: 07, y: -22 },
+          { x: 08, y: 15 },
+          { x: 08, y: -10 },
+          { x: 09, y: 40 },
+          { x: 09, y: -50 },
+          { x: 10, y: 55 },
+          { x: 10, y: -20 },
+          { x: 11, y: 60 },
+          { x: 11, y: -70 },
+          { x: 12, y: 20 },
+          { x: 12, y: -35 },
+          { x: 13, y: 75 },
+          { x: 13, y: -60 },
+          { x: 14, y: 40 },
+          { x: 14, y: -20 },
+        ],
+      },
+    ],
+  });
+  chart1.render();
+
+  // Chart 2 Clients Charts
   var chart = new CanvasJS.Chart("chartContainer", {
     theme: "light2", // "light1", "light2", "dark1", "dark2"
     animationEnabled: true,
@@ -30,28 +100,30 @@ window.onload = function () {
       interval: 1,
       intervalType: "month",
       valueFormatString: "MMM",
+      labelFontSize : 12,
     },
 
+    axisY: {
+      labels : false
+    },
+    toolTip: {
+      enabled : false
+    },
     data: [
       {
-        type: "line",
+        type: "spline",
         markerSize: 0,
         xValueFormatString: "MMM, YYYY",
         yValueFormatString: "$###.#",
         dataPoints: [
-          {
-            x: new Date(2016, 00, 1),
-            y: 40,
-            markerColor: "#6B8E23",
-            markerType: "cross",
-          },
-          { x: new Date(2016, 01, 1), y: 1, markerColor: "#6B8E23" },
-          { x: new Date(2016, 02, 1), y: 40, markerColor: "tomato" },
-          { x: new Date(2016, 03, 1), y: 1, markerColor: "tomato" },
-          { x: new Date(2016, 04, 1), y: 65, markerColor: "#6B8E23" },
-          { x: new Date(2016, 05, 1), y: 43, markerColor: "#6B8E23" },
-          { x: new Date(2016, 06, 1), y: 100, markerColor: "tomato" },
-          { x: new Date(2016, 07, 1), y: 80, markerColor: "tomato" },
+          {x: new Date(2016, 00, 1), y: 40 },
+          { x: new Date(2016, 01, 1), y: 1 },
+          { x: new Date(2016, 02, 1), y: 40 },
+          { x: new Date(2016, 03, 1), y: 1 },
+          { x: new Date(2016, 04, 1), y: 65 },
+          { x: new Date(2016, 05, 1), y: 43 },
+          { x: new Date(2016, 06, 1), y: 100 },
+          { x: new Date(2016, 07, 1), y: 80 },
         ],
       },
     ],
