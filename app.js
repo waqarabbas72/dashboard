@@ -24,34 +24,34 @@ window.onload = function () {
     animationEnabled: true,
     exportEnabled: true,
     theme: "light1", // "light1", "light2", "dark1", "dark2
-
+    // dataPointWidth: 10,
+    dataPointMaxWidth: 15,
     toolbar: {
-      enabled : false
+      enabled: false,
     },
     axisY: {
       includeZero: true,
       interval: 40,
-      lineThickness : 0,
-      tickThickness :0,
-      labelFontSize : 14,
+      lineThickness: 0,
+      tickThickness: 0,
+      labelFontSize: 14,
     },
     axisX: {
       includeZero: false,
       interval: 1,
-      lineThickness : 0,
-      tickThickness :0,
-      labelFontSize : 14,
-      labels : [1,11,22]
+      lineThickness: 0,
+      tickThickness: 0,
+      labelFontSize: 14,
+      gridThickness: 15,
+      gridColor: "#f2f2f2",
     },
-    dataPointWidth: 10,
-
     data: [
       {
         type: "column", //change type to bar, line, area, pie, etc
         //indexLabel: "{y}", //Shows y value on all Data Points
         indexLabelFontColor: "#5A5757",
         toolTipContent: "{x}<br/>{name} <strong>{y}</strong>",
-        color: "#1474CA",
+        color: "#0047ff",
         name: "New Clients :",
         indexLabelFontSize: 16,
         indexLabelPlacement: "outside",
@@ -100,23 +100,27 @@ window.onload = function () {
       interval: 1,
       intervalType: "month",
       valueFormatString: "MMM",
-      labelFontSize : 12,
+      labelFontSize: 12,
+      gridThickness: 2,
+      gridColor: "#f2f2f2",
     },
 
     axisY: {
-      labels : false
+      labels: false,
     },
     toolTip: {
-      enabled : false
+      enabled: false,
     },
     data: [
       {
         type: "spline",
+        lineThickness : 6,
+        color : "#0047ff",
         markerSize: 0,
         xValueFormatString: "MMM, YYYY",
         yValueFormatString: "$###.#",
         dataPoints: [
-          {x: new Date(2016, 00, 1), y: 40 },
+          { x: new Date(2016, 00, 1), y: 40 },
           { x: new Date(2016, 01, 1), y: 1 },
           { x: new Date(2016, 02, 1), y: 40 },
           { x: new Date(2016, 03, 1), y: 1 },

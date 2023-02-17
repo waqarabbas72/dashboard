@@ -45,7 +45,7 @@ a {
 
 /* side-bar */
 .side-bar ul li {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .side-bar ul li h4,
@@ -73,7 +73,7 @@ i {
 .side-bar {
   width: 280px !important;
   overflow-y: scroll;
-  height: 90vh;
+  height: 92vh;
 }
 
 /* .side-bar:hover{
@@ -305,6 +305,10 @@ i {
     display: none;
     width: 300px !important;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+    transition: all .5s ease;
+  }
+  .side-bar ul li {
+    margin: 10px 0;
   }
 }
 
@@ -332,5 +336,6 @@ i {
       width: 5rem;
       margin: 5px 0;
     }
+   
   }
 }
