@@ -49,27 +49,30 @@
 
           <!-- header UL -->
           <div>
-            <ul class="d-flex align-items-center m-0">
+            <ul class="d-flex align-items-center m-0 p-0">
               <!-- List Items -->
-              <li>
+              <li class=" align-items-center border rounded-3 px-2 d-none d-lg-flex">
+                <a href="#"><i class='bx bx-search fs-4'></i></a>
                 <input
                   type="text"
-                  class="searchBar mx-2 py-3 px-2 d-none d-lg-block"
+                  class="searchBar mx-2 py-3 px-2"
                   placeholder="Search Here..."
                 />
               </li>
               <!-- List Items -->
-              <li>
-                <i class="bx bx-envelope fs-1 mx-2"></i>
+              <li class="messages-icon mx-3">
+                <span class="fs-6 text-black bg-primary rounded-5 text-white px-1 px-sm-2">6</span>
+                <a href="#"><i class="bx bx-envelope text-secondary fs-1"></i></a>
               </li>
               <!-- List Items -->
-              <li>
-                <i class="bx bxs-bell fs-1 mx-2"></i>
+              <li class="messages-icon mx-3">
+                <span class="fs-6 text-black bg-primary rounded-5 text-white px-1 px-sm-2">4</span>
+                <a href="#"><i class="bx bxs-bell text-secondary fs-1"></i></a>
               </li>
               <!-- List Items -->
-              <li>
+              <li class="profile-item">
                 <!-- Profile -->
-                <div class="profile d-flex">
+                <div class="profile d-flex"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <img
                     src="https://vora.makaanlelo.com/media/admin@example.com/profile.png"
                     alt=""
@@ -80,6 +83,17 @@
                     <p class="text-muted m-0">Admin</p>
                   </div>
                 </div>
+                <ul class="flex-column align-items-start profile-dropdown dropdown-menu bg-white shadow-sm m-3 rounded-2 py-2">
+                  <li class="py-1">
+                    <a href="#" class="text-decoration-none my-1 text-muted "><i class='bx bxs-user fs-5 mx-3 text-primary' ></i>Profile</a>
+                  </li>
+                 <li class="py-1">
+                  <a href="#" class="text-decoration-none my-1 text-muted "><i class='bx bxs-envelope fs-5 mx-3 text-success' ></i>Inbox</a>
+                 </li>
+                  <li class="py-1">
+                    <a href="#" class="text-decoration-none my-1 text-muted"><i class='bx bx-exit fs-5 mx-3 text-danger' ></i>Logout</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -667,6 +681,13 @@
                       </div>
                     </div>
                     <div class="card-body">
+                      <div class="chart-details d-flex align-items-center ms-3">
+                        <span class="fs-1 fw-bold text-black">0,45%</span>
+                        <div class="ms-4 align-items-center d-flex">
+                          <i class='bx bxs-up-arrow fs-2 me-2'></i>
+                          <span class="text-muted last-month">Last month $563,443</span>
+                        </div>
+                      </div>
                       <!-- chart -->
                       <div id="projectChart" style="height: 370px; width: 100%;"></div>
                     </div>

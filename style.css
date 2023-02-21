@@ -18,17 +18,46 @@ header i {
 
 header .searchBar {
   background: transparent;
-  border: 1px solid rgb(230, 230, 230);
-  width: 20rem;
-  border-radius: 12px;
+  border: none;
+  width: 15rem;
+  border-radius: 10px;
   outline: none;
 }
+
+/* Icons */
+.messages-icon{
+  position: relative;
+}
+.messages-icon span{
+  position: absolute;
+  top: -20%;
+  right: 0;
+  cursor: pointer;
+}
+
+.messages-icon span:hover{
+  background-color: rgb(0, 27, 180) !important;
+}
+
+/* profile */
 header .profile {
   border-left: 1px solid rgb(222, 222, 222);
+  cursor: pointer;
 }
 header .profile img {
   width: 50px;
   height: 50px;
+}
+.profile-item{
+  position: relative;
+}
+.profile-dropdown{
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.profile-dropdown li:hover { 
+   background-color: #eaebeb;
 }
 
 header .bx-menu {
@@ -111,6 +140,15 @@ i {
   color: rgb(111, 111, 111);
   font-weight: 900;
 }
+
+/* Chart Icon */
+.bxs-up-arrow{
+  color: #16e871;
+}
+.last-month{
+  letter-spacing: .5px;
+}
+
 
 /* Progress BAr */
 .box {

@@ -26,9 +26,8 @@ window.onload = function () {
     theme: "light1", // "light1", "light2", "dark1", "dark2
     // dataPointWidth: 10,
     dataPointMaxWidth: 15,
-    toolbar: {
-      enabled: false,
-    },
+    exportEnabled: false,
+
     axisY: {
       includeZero: true,
       interval: 40,
@@ -39,42 +38,55 @@ window.onload = function () {
     axisX: {
       includeZero: false,
       interval: 1,
+      labelFormatter: function (e) {
+        if (e.value < 10) {
+          return "0" + e.value;
+        }
+        return e.value;
+      },
       lineThickness: 0,
       tickThickness: 0,
       labelFontSize: 14,
       gridThickness: 15,
       gridColor: "#f2f2f2",
+      // scaleBreaks: {
+      //   lineThickness: 11,
+      //   autoCalculate: true,
+      //   lineDashType : "straight"
+
+      //      },
     },
     data: [
       {
         type: "column", //change type to bar, line, area, pie, etc
         //indexLabel: "{y}", //Shows y value on all Data Points
         indexLabelFontColor: "#5A5757",
-        toolTipContent: "{x}<br/>{name} <strong>{y}</strong>",
+        toolTipContent: `{x}<br/>{name} <strong>{y}</strong>`,
         color: "#0047ff",
+        // radius: "90%",
         name: "New Clients :",
         indexLabelFontSize: 16,
         indexLabelPlacement: "outside",
 
         dataPoints: [
-          { x: 01, y: 70 },
-          { x: 01, y: -60 },
-          { x: 02, y: 20 },
-          { x: 02, y: -10 },
-          { x: 03, y: 75 },
-          { x: 03, y: -50 },
-          { x: 04, y: 20 },
-          { x: 04, y: -25 },
-          { x: 05, y: 50 },
-          { x: 05, y: -30 },
-          { x: 06, y: 40 },
-          { x: 06, y: -65 },
-          { x: 07, y: 65 },
-          { x: 07, y: -22 },
-          { x: 08, y: 15 },
-          { x: 08, y: -10 },
-          { x: 09, y: 40 },
-          { x: 09, y: -50 },
+          { x: 1, y: 70 },
+          { x: 1, y: -60 },
+          { x: 2, y: 20 },
+          { x: 2, y: -10 },
+          { x: 3, y: 75 },
+          { x: 3, y: -50 },
+          { x: 4, y: 20 },
+          { x: 4, y: -25 },
+          { x: 5, y: 50 },
+          { x: 5, y: -30 },
+          { x: 6, y: 40 },
+          { x: 6, y: -65 },
+          { x: 7, y: 65 },
+          { x: 7, y: -22 },
+          { x: 8, y: 15 },
+          { x: 8, y: -10 },
+          { x: 9, y: 40 },
+          { x: 9, y: -50 },
           { x: 10, y: 55 },
           { x: 10, y: -20 },
           { x: 11, y: 60 },
@@ -101,12 +113,22 @@ window.onload = function () {
       intervalType: "month",
       valueFormatString: "MMM",
       labelFontSize: 12,
+      includeZero: false,
       gridThickness: 2,
       gridColor: "#f2f2f2",
+      tickLength: 9,
+      tickColor: "#f2f2f3",
+      lineColor: "#f1f1f1",
     },
 
     axisY: {
       labels: false,
+      includeZero: false,
+      labelFormatter: function () {
+        return "";
+      },
+      lineThickness: 0,
+      tickThickness: 0,
     },
     toolTip: {
       enabled: false,
@@ -114,8 +136,8 @@ window.onload = function () {
     data: [
       {
         type: "spline",
-        lineThickness : 6,
-        color : "#0047ff",
+        lineThickness: 6,
+        color: "#0047ff",
         markerSize: 0,
         xValueFormatString: "MMM, YYYY",
         yValueFormatString: "$###.#",
